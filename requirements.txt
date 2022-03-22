@@ -1,0 +1,5 @@
+cffi @ file:///home/conda/feedstock_root/build_artifacts/cffi_1636046050867/work
+cld2-cffi==0.1.4
+pycparser @ file:///home/conda/feedstock_root/build_artifacts/pycparser_1636257122734/work
+PyICU @ file:///home/conda/feedstock_root/build_artifacts/pyicu_1642837017135/work
+six @ file:///home/conda/feedstock_root/build_artifacts/six_1620240208055/work
