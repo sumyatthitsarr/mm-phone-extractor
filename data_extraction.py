@@ -1,10 +1,9 @@
 import re
 import json
 
-phone_regex = '\+?959[0-9]{9}|09[0-9]{9}'
-
 def normalize(num):
     # print("before norm", num)
+    num = str(int(num)).zfill(len(num)) #converts burmese to eng integer and filling leading zero
     if num.startswith('+959'):
         # print('true')
         num=num.replace('+959','09')
@@ -30,9 +29,12 @@ def check_operator(ph_num):
         # break
 # check_operator()
 
+regex_file = open('regex.json')
+r_data = json.load(regex_file)
+
 def get_phone_data(string):
 
-    ph_num= re.findall(phone_regex, string)
+    ph_num= re.findall(r_data['phone_num'], string)
     ph_num = list(map(lambda x: normalize(x), ph_num))
 
     if len(ph_num)==1:
