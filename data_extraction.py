@@ -34,7 +34,7 @@ r_data = json.load(regex_file)
 
 def get_phone_data(string):
 
-    ph_num= re.findall(r_data['phone_num'], string)
+    ph_num = re.findall(r_data['phone_num'], string)
     ph_num = list(map(lambda x: normalize(x), ph_num))
 
     if len(ph_num)==1:
@@ -44,3 +44,9 @@ def get_phone_data(string):
         ph_num = ','.join(ph_num)
         print('The extracted phone numbers : {} and operator is {}'.format(ph_num, check_operator(ph_num)))
     
+#[State Number]/[District]([NAING/N])[Registered No]
+
+def get_nrc_data(string):
+    nrc = re.findall(r_data['nrc'], string)
+    # print(nrc)
+    return ' '.join(nrc)

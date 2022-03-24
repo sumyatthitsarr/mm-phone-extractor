@@ -33,3 +33,35 @@ This should print:
 ```
 The extracted phone number : 09421145678 and operator is MPT
 ```
+# Extract NRC data from text using RegEx pattern
+
+## Example Usage 1
+
+```
+from data_extraction import get_nrc_data
+
+test_str = 'My National ID card number is 10/MAKANA(Naing)000333'
+
+get_nrc_data(test_str)
+```
+
+This should print:
+
+```
+10/MAKANA(Naing)000333
+```
+## Example Usage 2
+
+```
+from data_extraction import get_nrc_data
+
+test_str = 'မှတ်ပုံတင်အမှတ် ၁၂/မကန(နိုင်)၀၀၀၀၂၅'
+
+get_nrc_data(test_str)
+```
+
+This should print:
+
+```
+၁၂/မကန(နိုင်)၀၀၀၀၂၅
+```
