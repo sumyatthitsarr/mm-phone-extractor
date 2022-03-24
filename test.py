@@ -7,7 +7,7 @@ from data_extraction import get_phone_data, get_nrc_data
 
 # get_phone_data(test_str)
 
-test_str = 'My National ID card number is 10/MAKANA(Naing)000333'
-test_str = 'မှတ်ပုံတင်အမှတ် ၁၂/မကန(နိုင်)၀၀၀၀၂၅'
+test_str = 'My National ID card number is 9/MAKANA(Naing)000333'
+test_str = 'မှတ်ပုံတင်အမှတ် ၉/မကန(နိုင်)၀၀၀၀၂၅'
 
 print('NRC number is {}'.format(get_nrc_data(test_str)))
