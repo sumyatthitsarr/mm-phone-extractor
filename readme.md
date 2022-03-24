@@ -65,5 +65,8 @@ This should print:
 ```
 ၉/မကန(နိုင်)၀၀၀၀၂၅
 ```
+*NOTE*  
+Data used in the above examples are just sample data.
+
 Future Work
 - NRC validation
