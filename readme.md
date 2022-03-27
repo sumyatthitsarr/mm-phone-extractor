@@ -57,13 +57,13 @@ from data_extraction import get_nrc_data
 
 test_str = 'မှတ်ပုံတင်အမှတ် ၉/မကန(နိုင်)၀၀၀၀၂၅'
 
-get_nrc_data(test_str)
+get_nrc_data(test_str, state = True)
 ```
 
 This should print:
 
 ```
-၉/မကန(နိုင်)၀၀၀၀၂၅
+('၉/မကန(နိုင်)၀၀၀၀၂၅', 'မန္တလေးတိုင်းဒေသကြီး')
 ```
 *NOTE*  
 Data used in the above examples are just sample data.
